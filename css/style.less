@@ -124,6 +124,12 @@ header {
    		-ms-border-radius: 50px;
    		-o-border-radius: 50px;
    		border-radius: 50px;
+   		&:hover {
+   		box-shadow: 0px 11px 20px 0px rgba(20, 20, 21, 0.08);	
+   		}
+   		span {
+   			font-size: 22px;
+   		}
    	}
    	input, textarea {
    		width: 100%;
@@ -198,6 +204,9 @@ header {
 		font-size: 20px;
 		margin-bottom: 25px;
 	}
+	&:hover {
+		box-shadow: 0px 0px 35px 0px rgba(20, 20, 21, 0.21)
+	}
 }
 &-btn {
 	position:absolute;
@@ -216,6 +225,9 @@ header {
 	width: 80%;
 	.opn-reg;
 	font-size: 16px;
+	&:hover {
+	box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.09);	
+	}
 }
 }
 .btn-plus {
@@ -258,4 +270,52 @@ i.fa-camera-retro {
 	-ms-transform: rotate(-15deg) ;
 	-o-transform: rotate(-15deg) ;
 	transform: rotate(-15deg) ;
+}
+.works-box {
+	height: 360px;
+	position:relative;
+
+	}
+.signature {
+	opacity: 0;
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0, .7);
+	color:@wihte;
+	text-align: center;
+	display: -webkit-flex;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	-webkit-justfy-content:center;
+	-webkit-align-items:center;
+	-webkit-transition: all 0.2s ;
+	-o-transition: all 0.2s ;
+	transition: all 0.2s ;
+	&:hover {
+		opacity:1;
+
+	}
+}
+.sign {
+	p {
+		.opn-bold;
+		font-size: 22px;
+	}
+	button {
+		border:none;
+		padding: 15px 35px;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		-ms-border-radius: 50px;
+		-o-border-radius: 50px;
+		border-radius: 50px;
+		background-color:@base-red;
+	}
+}
+.works-row {
+	margin-top: 3%;
 }
